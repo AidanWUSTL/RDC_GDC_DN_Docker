@@ -105,7 +105,7 @@ cd $WD
 echo "gradient_unwarp.py ${BaseName}_vol1.nii.gz trilinear.nii.gz siemens -g ${InputCoeffs} -n" >> log.txt
 # NB: gradient_unwarp.py *must* have the filename extensions written out explicitly or it will crash
 #gradient_unwarp.py ${BaseName}_vol1.nii.gz trilinear.nii.gz siemens -g $InputCoeffs -n
-/home/loseille/joerobotninjas/lib/python2.7/site-packages/gradunwarp/core/gradient_unwarp.py ${BaseName}_vol1.nii.gz trilinear.nii.gz siemens -g $InputCoeffs -n
+/opt/joerobotninjas/lib/python2.7/site-packages/gradunwarp/core/gradient_unwarp.py ${BaseName}_vol1.nii.gz trilinear.nii.gz siemens -g $InputCoeffs -n
 cd $ORIGDIR
 
 # Now create an appropriate warpfield output (relative convention) and apply it to all timepoints
