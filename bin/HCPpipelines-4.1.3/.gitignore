@@ -10,4 +10,5 @@
 # Ignore gradient coefficients files
 # These are sometimes proprietary and should not be 
 # checked in to a repository.
-*.grad
+#*.grad
+# removed 3/18/2024 to assist with build in docker
