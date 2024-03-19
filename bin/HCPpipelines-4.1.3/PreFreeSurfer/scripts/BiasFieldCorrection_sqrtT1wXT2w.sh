@@ -47,6 +47,12 @@ fi
 source "${HCPPIPEDIR}/global/scripts/debug.shlib" "$@"         # Debugging functions; also sources log.shlib
 
 # ------------------------------------------------------------------------------
+# Manually set CARET7DIR due to issues with environment in docker
+# ------------------------------------------------------------------------------
+CARET7DIR=/opt/workbench/bin_linux64
+export CARET7DIR=/opt/workbench/bin_linux64
+
+# ------------------------------------------------------------------------------
 #  Verify required environment variables are set and log value
 # ------------------------------------------------------------------------------
 
